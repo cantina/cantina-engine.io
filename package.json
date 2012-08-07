@@ -1,0 +1,24 @@
+{
+  "author": "Carlos Rodriguez <carlos@s8f.org> (http://s8f.org/)",
+  "name": "cantina-engine.io",
+  "description": "Engine.io for Cantina",
+  "private": true,
+  "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/cantina/cantina-engine.io.git"
+  },
+  "dependencies": {
+    "oil": "~0.1.1",
+    "cantina-utils": "git+ssh://git@github.com/cantina/cantina-utils.git"
+  },
+  "devDependencies": {
+    "cantina": "git+ssh://git@github.com:cantina/cantina.git",
+    "amino": "~0.13.4",
+    "mocha": "*"
+  },
+  "optionalDependencies": {},
+  "engines": {
+    "node": "*"
+  }
+}

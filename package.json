@@ -9,7 +9,7 @@
     "url": "git://github.com/cantina/cantina-engine.io.git"
   },
   "dependencies": {
-    "oil": "~0.3.4",
+    "oil": "~0.3.5",
     "cantina-utils": "git+ssh://git@github.com/cantina/cantina-utils.git"
   },
   "devDependencies": {

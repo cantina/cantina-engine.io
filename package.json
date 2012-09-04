@@ -8,17 +8,17 @@
     "type": "git",
     "url": "git://github.com/cantina/cantina-engine.io.git"
   },
+  "peerDependencies": {
+    "cantina": "git+ssh://git@github.com/cantina/cantina.git#1.x"
+  },
   "dependencies": {
-    "oil": "~0.3.5",
-    "cantina-utils": "git+ssh://git@github.com/cantina/cantina-utils.git"
+    "oil": "~0.3.6"
   },
   "devDependencies": {
-    "cantina": "git+ssh://git@github.com:cantina/cantina.git",
-    "amino": "~0.13.4",
     "mocha": "*"
   },
   "optionalDependencies": {},
   "engines": {
-    "node": "*"
+    "node": ">= 0.6.0"
   }
 }

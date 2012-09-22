@@ -3,13 +3,13 @@
   "name": "cantina-engine.io",
   "description": "Engine.io for Cantina",
   "private": true,
-  "version": "1.0.0-dev",
+  "version": "2.0.0",
   "repository": {
     "type": "git",
     "url": "git://github.com/cantina/cantina-engine.io.git"
   },
   "peerDependencies": {
-    "cantina": "git+ssh://git@github.com/cantina/cantina.git#1.x"
+    "cantina": "git+ssh://git@github.com/cantina/cantina.git#2.x"
   },
   "dependencies": {
     "oil": "~0.3.6"

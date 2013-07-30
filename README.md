@@ -5,11 +5,21 @@ Engine.io for Cantina
 
 Dependencies
 ------------
-- **http** - The core http Cantina plugin.
+- **app.server** - A Server object that eventually starts listening.
 
 Provides
 --------
 - **app.io** - And engine.io instance.
+
+Hooks
+-----
+- **io:handshake (socket, cb)** - Operate on a socket object right after connection.
+
+Events
+------
+- **io:listening** - The server is now listening for socket connections.
+- **io:connected (socket)** - A new socket connection was made.
+- **io:disconnected (socket)** - A socket was disconnected.
 
 Configuration
 -------------
@@ -18,19 +28,19 @@ engine.io initialization.
 
 Usage
 -----
-Your app can implement a listner for `io:handshake` if it needs to perform any
+Your app can implement a hook for `io:handshake` if it needs to perform any
 socket handshaking.
 
 **Example**
 ```js
-app.on('io:handshake', function(socket, done) {
+app.hook('io:handshake').add(function(socket, next) {
   // If the socket should be denied then call done with the appropriate error.
-  done(new Error('Handshake error for socket: ' + JSON.stringify(socket)));
+  next(new Error('Handshake error for socket: ' + JSON.stringify(socket)));
 
   // Do other stuff.
 
   // Finish the handshake.
-  done();
+  next();
 });
 ```
 
@@ -43,7 +53,7 @@ strategy firm located in Aptos, CA and Washington, D.C.
 - - -
 
 ### License: MIT
-Copyright (C) 2012 Terra Eclipse, Inc. ([http://www.terraeclipse.com](http://www.terraeclipse.com))
+Copyright (C) 2013 Terra Eclipse, Inc. ([http://www.terraeclipse.com](http://www.terraeclipse.com))
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

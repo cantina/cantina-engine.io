@@ -14,7 +14,7 @@ app.server.once('listening', function () {
       if (err) return app.emit('error', err);
       app.emit('io:connected', socket);
       socket.once('close', function () {
-        app.emit('io:disconnected');
+        app.emit('io:disconnected', socket);
       });
     });
   });

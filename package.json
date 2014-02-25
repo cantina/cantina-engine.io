@@ -13,7 +13,7 @@
     "url": "git://github.com/cantina/cantina-engine.io.git"
   },
   "dependencies": {
-    "oil": "~0.3.6"
+    "oil": "~0.4.1"
   },
   "devDependencies": {
     "mocha": "~1.12.0",

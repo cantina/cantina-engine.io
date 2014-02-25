@@ -3,7 +3,7 @@
   "name": "cantina-engine.io",
   "description": "Engine.io for Cantina",
   "private": true,
-  "version": "3.0.1",
+  "version": "3.0.2",
   "main": "cantina-engine.io.js",
   "scripts": {
     "test": "make test"
